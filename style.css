@@ -1,0 +1,348 @@
+body {
+    background: hsl(226, 43%, 10%);
+    font-size: 30px;
+    font-family: 'Rubik', sans-serif;
+}
+
+#container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3em;
+    width: 80%;
+    font-size: 15px;
+    margin:auto;
+    height:90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Loook*/
+#main__profile {
+    position: relative;
+    position: relative;
+    display: flex;
+    flex: 1 1 1%;
+    flex-direction: column;
+}
+
+#home {
+    border-radius:8px;
+    position: relative;
+    display: flex;
+    flex: 1 1 1%;
+    flex-direction: column;
+    margin-right: -40px ;
+    background: hsl(235, 46%, 20%);
+    margin-top: 30px;
+}
+#look {
+    background: hsl(246, 80%, 60%);
+    padding: 15px;
+    padding-bottom: 15px;
+    padding-right: 0;
+    border-radius: 8px;
+    margin-top: 0px;
+}
+
+#look p{
+    color:hsl(236, 100%, 87%) ;
+    margin-top: 32px;
+    margin-bottom: -22px;
+}
+#look h2 {
+    width: 50%;
+    color: hsl(240, 100%, 98%);
+    font-weight: 300 !important;
+    font-size: 33px;
+    margin-bottom: 33px;
+}
+
+#overview {
+    padding: 1px 5px 16px 25px;
+    background: hsl(235, 46%, 20%);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+#overview p:nth-child(2) {
+    color:hsl(236, 100%, 87%) ;
+    width: 10px;
+    
+}
+#overview p:nth-child(3) {
+    color:hsl(236, 100%, 87%) ;
+    width: 10px;
+    
+}
+#daily {
+    color: hsl(0, 0%, 97%);
+}
+#overview p:hover {
+    color: hsla(0, 0%, 97%, 0.856);
+    cursor: pointer;
+}
+
+
+#main__profile img {
+    width:50px;
+    height:50px ;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+
+/**Cards**/
+#cards__container {
+    display: flex;
+    flex: 1 1 50%;
+    padding: 10px;
+    align-items:center;
+    justify-content: center;
+    flex-wrap:wrap;
+    /*width: 60% !important;
+    background: red;*/
+}
+#icon__ontainer {
+    width: 100%;
+    padding-top: 6px;
+}
+
+.first__card {
+    height: 25px !important;
+    border-radius: 8px 8px 0 0;
+    background-image: url(images/icon-social.svg);
+    background-size:55px ;
+    padding-top: 5px !important;
+    background-position-x: 92%;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+#social {
+    background: hsl(264, 64%, 52%);
+
+    border-radius: 8px;
+    height: 50px;
+}
+
+.second__card {
+    height: 25px !important;
+    border-radius: 8px 8px 0 0;
+    background-image: url(images/icon-self-care.svg);
+    background-position: right;
+    background-size: 55px;
+    background-position-x: 92%;
+    padding-top: 5px !important;
+
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+#self {
+    background: hsl(43, 84%, 65%);
+
+    border-radius: 8px;
+    height: 50px;
+}
+.third__card {
+    /*background: hsl(15, 100%, 70%);*/
+    height: 25px !important;
+    border-radius: 8px 8px 0 0;
+    background-image: url(images/icon-work.svg);
+    background-position: right;
+    background-size: 55px;
+    background-position-x: 92%;
+    padding-top: 5px !important;
+
+    background-repeat: no-repeat;
+
+    z-index: 1;
+}
+#work {
+    background: hsl(15, 100%, 70%);
+    border-radius: 8px;
+    height: 50px;
+}
+.fourth__card {
+    height: 25px !important;
+    border-radius: 8px 8px 0 0;
+    background-image: url(images/icon-play.svg);
+    background-position: right;
+    background-size: 55px;
+    background-position-x: 92%;
+    padding-top: 5px !important;
+
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+#play {
+    background: hsl(195, 74%, 62%);
+
+    border-radius: 8px;
+    height: 50px;
+}
+
+.fifth__card {
+    height: 25px !important;
+    border-radius: 8px 8px 0 0;
+    background-image: url(images/icon-study.svg);
+    background-position: right;
+    background-size: 55px;
+    background-position-x: 92%;
+    padding-top: 5px !important;
+
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+#study {
+    background: hsl(348, 100%, 68%);
+    border-radius: 8px;
+    height: 50px;
+}
+
+.sixth__card {
+    height: 25px !important;
+    border-radius: 8px 8px 0 0;
+    background-image: url(images/icon-exercise.svg);
+    background-position: right;
+    background-size: 55px;
+    background-position-x: 92%;
+    padding-top: 5px !important;
+
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+#exercise {
+    background: hsl(145, 58%, 55%);
+
+    border-radius: 8px;
+    height: 50px;
+}
+/*Each card*/
+
+#card {
+    padding: 13px;
+    margin: 12px 0;
+    flex: 1 1 25%;
+    height: 150px!important;
+}
+@media screen and (min-width:300px) and (max-width:700px){
+    #card {
+    min-width: 320px;
+
+    }
+    #outline__info span{
+        display:flex ;
+    }
+    #time {
+        margin: auto;
+        display: flex;
+        padding-top: 54px;
+        padding-left: 100px;
+    }
+    #home {
+        margin-right: 0;
+    }
+    #main__profile {
+        margin: auto;
+        min-width:320px;
+    }
+    #main__profile h2{
+        font-size: 20px ;
+        width: 100%;
+        padding-top: 10px;
+    }
+    #look img {
+        max-width: 50px;
+        flex: 1 1 0%;
+    }
+    #look {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    #look p {
+        margin-top: 0;
+    }
+    #look span:first-child {
+        flex:1 1 10%;
+        /*background-color: rgb(102, 98, 95);*/
+        align-items: center;
+        justify-content: center;
+        height: 12vh;
+    }
+    #look span:last-child {
+       /* background-color: red;*/
+        flex:1 1 60%;
+        align-items: center;
+        justify-content: center;
+        height: 12vh;
+    }
+
+    #overview {
+        display: flex;
+        gap: 70px;
+        align-items: center;
+        justify-content: center;
+        padding: 8px !important;
+        margin-bottom:-3em !important;
+
+    }
+    #overview p {
+        text-align: center;
+        flex-basis: 9%;
+    }
+    #time {
+        padding-left: 40px;
+    }
+
+    .attribution {
+        margin-top: 6em;
+    }
+}
+#outline__info {
+    background: hsl(235, 46%, 20%);
+    border-radius: 8px;
+    padding-left:20px ;
+    
+
+}
+#outline__info:hover {
+    background: hsl(238, 40%, 33%);
+    cursor: pointer;
+
+}
+
+#outline__info span:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+span img {
+    height: 5px;
+    margin-right: 15px;
+}
+span img:hover {
+    filter:brightness(500%);
+    cursor: pointer;
+}
+
+#outline__info #schedule {
+    color: white;
+    font-weight: 400;
+}
+
+/*Hours*/
+#outline__info h2 {
+    color: white;
+    font-size: 45px;
+    font-weight: 200;
+    margin-top: 1px;
+}
+
+#time {
+    color:hsl(236, 100%, 87%) ;
+    margin-top:-35px;
+    padding-bottom: 30px;
+}

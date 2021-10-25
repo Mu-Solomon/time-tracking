@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+  <title>Frontend Mentor | Time tracking dashboard</title>
+ 
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { 
+      font-size: 11px; text-align: center;
+      
+     }
+    .attribution a { color: hsl(228, 45%, 44%); }
+     p span{
+    color: hsl(240, 100%, 98%);
+
+    }
+    .attribution p {
+    color:hsl(236, 100%, 87%) ;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+<!--Longest Profile Card-->
+<div id="home">
+  <div id="main__profile">  
+    <section id="look">
+      <span>
+        <img src="images/image-jeremy.png" alt="Profile-photo" >
+      </span>
+      <span>
+        <p>Report for</p>
+      <h2>Jeremy Robson</h2>
+      </span>
+
+    </section>
+<!--Time(Daily,Weekly,Monthly)-->
+    <section id="overview">
+      <p id="daily">Daily</p>
+      <p id="weekly">Weekly</p>
+      <p id="monthly">Monthly</p>
+    </section>
+  </div>
+</div>
+
+  
+  <div id="cards__container">
+
+<!--Card 1 (Work)-->
+        <div id="card">
+          <div id="work">
+            <section id="icon__ontainer" class="third__card">
+            </section>
+            <section id="outline__info">
+              <span>
+                <p id="schedule">Work</p>
+                <img src="images/icon-ellipsis.svg" alt="">
+              </span>
+              <span>
+                <h2 id="workHours">5hrs <!-- daily --></h2>
+                <p id="time" class="workPrevious">Yesterday - 7hrs <!-- daily --></p>
+              </span>
+            
+            </section>
+          </div>
+
+        </div>
+
+<!--Card 2 (Play)-->
+        <div id="card">
+          <div id="play">
+            <section id="icon__ontainer" class="fourth__card">
+            </section>
+            <section id="outline__info">
+              <span>
+                <p id="schedule">Play</p>
+              <img src="images/icon-ellipsis.svg" alt="">
+              </span>
+              <span>
+                
+              <h2 id="playHours">1hr <!-- daily --></h2>
+              <p id="time" class="playPrevious">Yesterday - 2hrs <!-- daily --></p>
+            </span>
+
+              
+            </section>
+          </div>
+
+        </div>
+
+<!--Card 3 (Study)-->
+        <div id="card">
+          <div id="study">
+            <section id="icon__ontainer" class="fifth__card">
+            </section>
+            <section id="outline__info">
+              <span>
+                <p id="schedule">Study</p>
+              <img src="images/icon-ellipsis.svg" alt="">
+              </span>
+              <span>
+
+              <h2 id="studyHours">0hrs <!-- daily --></h2>
+              <p id="time" class="studyPrevious">Yesterday - 1hr <!-- daily --></p>
+            </span>
+
+            </section>
+          </div>
+
+        </div>
+
+<!--Card 4 (Exercise)-->
+        <div id="card">
+          <div id="exercise">
+            <section id="icon__ontainer" class="sixth__card">
+            </section>
+            <section id="outline__info">
+              <span>
+                <p id="schedule">Exercise</p>
+              <img src="images/icon-ellipsis.svg" alt="">
+              </span>
+              <span>
+
+              <h2 id="exerciseHours">1hr <!-- daily --></h2>
+              <p id="time" class="exercisePrevious">Yesterday - 1hr <!-- daily --></p>
+            </span>
+
+            </section>
+          </div>
+
+        </div>
+
+<!--Card 5 (Social)-->
+        <div id="card">
+          <div id="social">
+            <section id="icon__ontainer" class="first__card">
+            </section>
+            <section id="outline__info">
+              <span>
+                <p id="schedule">Social</p>
+                <img src="images/icon-ellipsis.svg" alt="">
+              </span>
+              <span>
+              <h2 id="socialHours">1hr <!-- daily --></h2>
+              <p id="time" class="socialPrevious">Yesterday - 3hrs <!-- daily --></p>
+            </span>
+
+            </section>
+          </div>
+
+        </div>
+
+<!--Card 6(Self Care)-->
+        <div id="card">
+          <div id="self">
+            <section id="icon__ontainer" class="second__card">
+            </section>
+            <section id="outline__info">
+              <span>
+                <p id="schedule">Self Care</p>
+                <img src="images/icon-ellipsis.svg" alt="">
+              </span>
+              <span>
+  
+              <h2 id="selfHours">0hrs <!-- daily --></h2>
+              <p id="time" class="selfPrevious">Yesterday - 1hr <!-- daily --></p>
+            </span>
+  
+            </section>
+          </div>
+
+      </div>
+   </div>
+  </div>
+  
+  
+  <div class="attribution">
+    <p>Coded by <a href="#"><span>Mu-Solomon</span></a>.</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

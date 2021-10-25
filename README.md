@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](images/screenshot.jpg)
 
 
 ### Links
@@ -59,6 +59,5 @@ It's been really challenging for me to build it up to an extent that I had to re
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Mu-Solomon)
+- Frontend Mentor - [@MU-Solomon](https://www.frontendmentor.io/profile/Mu-Solomon)
 - Email - [@Mu-Solomon](mailto:musolomoni@gmail.com)
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**

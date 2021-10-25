@@ -23,6 +23,7 @@ body {
     display: flex;
     flex: 1 1 1%;
     flex-direction: column;
+
 }
 
 #home {
@@ -34,6 +35,8 @@ body {
     margin-right: -40px ;
     background: hsl(235, 46%, 20%);
     margin-top: 30px;
+    margin-left: 60px !important;
+
 }
 #look {
     background: hsl(246, 80%, 60%);
@@ -241,6 +244,7 @@ body {
     }
     #home {
         margin-right: 0;
+        margin-left: 0 !important;
     }
     #main__profile {
         margin: auto;

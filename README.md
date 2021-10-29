@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/back-with-the-timetrackingdashboard-cssflexbox-and-some-javascript-V9qo7DVBd)
 - Live Site URL: [Live site URL here](https://solomon-time-track.netlify.app/)
 
 ### Built with
@@ -59,5 +59,5 @@ It's been really challenging for me to build it up to an extent that I had to re
 
 ## Author
 
-- Frontend Mentor - [@MU-Solomon](https://www.frontendmentor.io/profile/Mu-Solomon)
+- Frontend Mentor - [@Mu-Solomon](https://www.frontendmentor.io/profile/Mu-Solomon)
 - Email - [@Mu-Solomon](mailto:musolomoni@gmail.com)

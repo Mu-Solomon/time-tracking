@@ -26,9 +26,13 @@ daily = document.getElementById('daily');
 daily.addEventListener('click', dailySwicth)
 function dailySwicth() {
 
-    daily.style.color = 'hsl(0, 0%, 97%)';
+    /*daily.style.color = 'hsl(0, 0%, 97%)';
     weekly.style.color = 'hsl(236, 100%, 87%)';
-    monthly.style.color = 'hsl(236, 100%, 87%)';
+    monthly.style.color = 'hsl(236, 100%, 87%)';*/
+
+    daily.classList.add("activate");
+    weekly.classList.remove("activate");
+    monthly.classList.remove("activate");
 
     workHours.innerHTML = '5hrs';
     workPrevious.innerHTML = 'Yesterday - 7hrs';
@@ -53,9 +57,13 @@ function dailySwicth() {
 weekly = document.getElementById('weekly');
 weekly.addEventListener('click', weeklySwicth)
 function weeklySwicth() {
-    daily.style.color = 'hsl(236, 100%, 87%)';
+    /*daily.style.color = 'hsl(236, 100%, 87%)';
     weekly.style.color = 'hsl(0, 0%, 97%)';
-    monthly.style.color = 'hsl(236, 100%, 87%)';
+    monthly.style.color = 'hsl(236, 100%, 87%)';*/
+
+    weekly.classList.add("activate");
+    daily.classList.remove("activate");
+    monthly.classList.remove("activate");
 
     workHours.innerHTML = '32hrs';
     workPrevious.innerHTML = 'Last week - 36hrs';
@@ -80,9 +88,13 @@ monthly = document.getElementById('monthly');
 monthly.addEventListener('click', monthlySwicth)
 function monthlySwicth() {
 
-    daily.style.color = 'hsl(236, 100%, 87%)';
+    /*daily.style.color = 'hsl(236, 100%, 87%)';
     weekly.style.color = 'hsl(236, 100%, 87%)';
-    monthly.style.color = 'hsl(0, 0%, 97%)';
+    monthly.style.color = 'hsl(0, 0%, 97%)';*/
+
+    monthly.classList.add("activate");
+    weekly.classList.remove("activate");
+    daily.classList.remove("activate");
 
     workHours.innerHTML = '103hrs';
     workPrevious.innerHTML = 'Last month - 128hrs';

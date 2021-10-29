@@ -2,13 +2,14 @@ body {
     background: hsl(226, 43%, 10%);
     font-size: 30px;
     font-family: 'Rubik', sans-serif;
+    transition: 1s;
 }
 
 #container {
     display: flex;
     flex-wrap: wrap;
     gap: 3em;
-    width: 80%;
+    width: 90%;
     font-size: 15px;
     margin:auto;
     height:90vh;
@@ -27,28 +28,28 @@ body {
 }
 
 #home {
-    border-radius:8px;
+    border-radius:10px;
     position: relative;
     display: flex;
-    flex: 1 1 1%;
     flex-wrap: wrap !important;
     margin-right: -40px ;
     background: hsl(235, 46%, 20%);
-    margin-top: 30px;
-    margin-left: 60px !important;
+    margin-top: 70px;
+    margin-left: 0px !important;
 
 }
 #look {
     background: hsl(246, 80%, 60%);
     padding: 15px;
-    padding-bottom: 15px;
+    padding-top: 35px;
+    padding-bottom: 50px;
     padding-right: 0;
-    border-radius: 8px;
+    border-radius: 15px;
     margin-top: 0px;
 }
 
 #look p{
-    color:hsl(236, 100%, 87%) ;
+    color: hsla(236, 100%, 87%, 0.76);
     margin-top: 32px;
     margin-bottom: -22px;
 }
@@ -61,10 +62,17 @@ body {
 }
 
 #overview {
-    padding: 1px 5px 16px 25px;
+    padding: 25px 5px 25px 25px;
     background: hsl(235, 46%, 20%);
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.activate {
+    color: hsl(0, 0%, 97%) !important;
+}
+#daily {
+    color: hsl(236, 100%, 87%);
 }
 
 #overview p:nth-child(2) {
@@ -75,11 +83,9 @@ body {
 #overview p:nth-child(3) {
     color:hsl(236, 100%, 87%) ;
     width: 10px;
-    
+    transition: 1s ;
 }
-#daily {
-    color: hsl(0, 0%, 97%);
-}
+
 #overview p:hover {
     color: hsla(0, 0%, 97%, 0.856);
     cursor: pointer;
@@ -111,8 +117,8 @@ body {
 }
 
 .first__card {
-    height: 25px !important;
-    border-radius: 8px 8px 0 0;
+    height: 30px !important;
+    border-radius: 20px 20px 0 0;
     background-image: url(images/icon-social.svg);
     background-size:55px ;
     padding-top: 5px !important;
@@ -123,13 +129,13 @@ body {
 #social {
     background: hsl(264, 64%, 52%);
 
-    border-radius: 8px;
+    border-radius: 10px;
     height: 50px;
 }
 
 .second__card {
-    height: 25px !important;
-    border-radius: 8px 8px 0 0;
+    height: 30px !important;
+    border-radius:10px;
     background-image: url(images/icon-self-care.svg);
     background-position: right;
     background-size: 55px;
@@ -142,12 +148,13 @@ body {
 #self {
     background: hsl(43, 84%, 65%);
 
-    border-radius: 8px;
+    border-radius: 10px;
+
     height: 50px;
 }
 .third__card {
     /*background: hsl(15, 100%, 70%);*/
-    height: 25px !important;
+    height: 30px !important;
     border-radius: 8px 8px 0 0;
     background-image: url(images/icon-work.svg);
     background-position: right;
@@ -157,15 +164,14 @@ body {
 
     background-repeat: no-repeat;
 
-    z-index: 1;
 }
 #work {
     background: hsl(15, 100%, 70%);
-    border-radius: 8px;
+    border-radius: 10px;
     height: 50px;
 }
 .fourth__card {
-    height: 25px !important;
+    height: 30px !important;
     border-radius: 8px 8px 0 0;
     background-image: url(images/icon-play.svg);
     background-position: right;
@@ -180,7 +186,7 @@ body {
 #play {
     background: hsl(195, 74%, 62%);
 
-    border-radius: 8px;
+    border-radius: 10px;
     height: 50px;
 }
 
@@ -198,12 +204,12 @@ body {
 }
 #study {
     background: hsl(348, 100%, 68%);
-    border-radius: 8px;
+    border-radius: 10px;
     height: 50px;
 }
 
 .sixth__card {
-    height: 25px !important;
+    height: 30px !important;
     border-radius: 8px 8px 0 0;
     background-image: url(images/icon-exercise.svg);
     background-position: right;
@@ -217,21 +223,25 @@ body {
 #exercise {
     background: hsl(145, 58%, 55%);
 
-    border-radius: 8px;
+    border-radius: 10px;
     height: 50px;
 }
 /*Each card*/
 
 #card {
-    padding: 13px;
-    margin: 12px 0;
-    flex: 1 1 25%;
+    padding: 14px;
+    margin: 35px 0;
+    flex: 1 1 30%;
     height: 150px!important;
 }
 @media screen and (min-width:300px) and (max-width:700px){
     #card {
     min-width: 320px;
+    padding: 0px !important;
 
+    }
+    #outline__info {
+        padding-bottom: 0 !important;
     }
     #outline__info span{
         display:flex ;
@@ -239,7 +249,7 @@ body {
     #time {
         margin: auto;
         display: flex;
-        padding-top: 54px;
+        padding-top: 50px !important;
         padding-left: 100px;
     }
     #home {
@@ -288,25 +298,30 @@ body {
         align-items: center;
         justify-content: center;
         padding: 8px !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
         margin-bottom:-3em !important;
 
     }
     #overview p {
         text-align: center;
         flex-basis: 9%;
+        padding-right: 10px !important;
+        margin-right: 0 !important;
     }
     #time {
         padding-left: 40px;
     }
 
     .attribution {
-        margin-top: 6em;
+        margin-top: 95em;
     }
 }
 #outline__info {
     background: hsl(235, 46%, 20%);
-    border-radius: 8px;
-    padding-left:20px ;
+    border-radius: 15px;
+    padding-bottom: 15px;
+    padding-left:30px ;
     
 
 }
@@ -315,6 +330,7 @@ body {
     cursor: pointer;
 
 }
+
 
 #outline__info span:first-child {
     display: flex;
@@ -325,7 +341,7 @@ body {
 
 span img {
     height: 5px;
-    margin-right: 15px;
+    margin-right: 25px;
 }
 span img:hover {
     filter:brightness(500%);
@@ -335,6 +351,7 @@ span img:hover {
 #outline__info #schedule {
     color: white;
     font-weight: 400;
+    font-size: 17px;
 }
 
 /*Hours*/
@@ -343,10 +360,12 @@ span img:hover {
     font-size: 45px;
     font-weight: 200;
     margin-top: 1px;
+    margin-left: ;
 }
 
 #time {
     color:hsl(236, 100%, 87%) ;
-    margin-top:-35px;
-    padding-bottom: 30px;
+    margin-top:-30px;
+    padding-top: 12px;
+    padding-bottom: 10px;
 }
